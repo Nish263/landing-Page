@@ -1,0 +1,87 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-image: url(/images/bg-mobile.svg);
+  background-size: cover;
+  background-color: var(--violet);
+  padding: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.logo {
+  width: 10px;
+}
+
+.mock-up {
+  width: 100%;
+  margin-bottom: 4rem;
+  max-height: 40rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin-right: 2rem;
+  align-self: center;
+}
+
+.text {
+  font-size: 0.8rem;
+  color: white;
+  align-self: center;
+  margin-bottom: 1rem;
+  font-family: "Open Sans";
+}
+
+.btn {
+  color: var(--violet);
+  padding: 0.4rem 3rem;
+  outline: var(--violet);
+  align-self: center;
+  font-size: 1rem;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  background-color: var(--soft-magenta);
+  outline: var(--soft-magenta);
+  border: var(--soft-magenta);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  opacity: 0.6;
+  color: white;
+  gap: 1rem;
+  border: round;
+}
